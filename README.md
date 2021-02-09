@@ -1,25 +1,26 @@
-# Savvy Coders Project Boilerplate Starter Kit
+# CapstoneJan2021
+# Definition statement
+For my capstone project I will be creating a Production Planning Website which will help businesses see the movement and pitch of their products along with production and ordering needs. 
+# Elevator 
+My name is Heather Ingargiola and I am currently a Bakery Manager for Schnucks and have worked there my entire professional career. Now I have decided to go through a transition and start a new career. I am currently in the Savvy Coders Boot Camp to learn how to be a Full Stack Developer. 
+For my capstone project I will be creating a Production Planning Website which will help businesses see the movement and pitch of their products along with production and ordering needs. 
+# Outline 
+HomePage/ Title Page
 
-## Overview
+ There will be four clickable links that will take you to the other pages.
+ 
+Movement 
 
-This template repository contains several opinionated, 'starter' files and settings to help Savvy Coder students focus more time and energy on learning how to code and/or craft 'business logic' for projects and less time on configurations.
+This page the user will be able to enter an upc or item number etc. They will then see the current movement on the item for every day for the last four weeks. At the end of each week it will show a total for the week.
 
-In addition to a '.gitignore' and some VS Code specific extensions and settings, it includes the 'recommended' settings for:
+Pitch
 
-1. [ESLint](eslint.org)
-2. [Stylelint](stylelint.io)
-3. [Prettier](prettier.io)
+This page will work similar to the movement page except it will show what the user threw away. It will also calculate a pitch % so the user can easily see where that might have a problem. 
 
-## Get Started
+Production
 
-**First and foremost,** make sure that your local machine is set up with all of the 'dev environment tooling' as per [this guide...](https://www.notion.so/codefinity/Setting-up-a-Local-Dev-Environment-97de62a546f943fbbc7a246b4785a343)
+This will be run once a week and will use that data from the movement and pitch pages to calculate how much of each product the user should be producing every day. The calculation will be simple, take what you have sold on that particular day the last four weeks and add them together, then divided by four. That will give you the average sales amount for that day. 
 
-Well, after establishing your directory structure on your local machine, (e.g. '~/Code/SavvyCoders'), kindly [follow these girections](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) - essentially, there should be a button 👆🏾that says **Use this template.**
+Ordering 
 
-Once this repo has been created on your GitHub, you can click on the button to 'clone' it as usual. Once it's `clone`d to your local machine, kindly `cd` into the directory and **be sure to do:** `npm i` to get all of the goodies. If you see any _errors_ (warnings are 🙆🏾‍♂️) on Windows, you may have to do `npm install`.
-
-Now, enter `code .` to open this project in VS Code, and look for a prompt to 'install some extensions' once inside VS Code (in the bottom right of your screen). You should install these. 👍🏾
-
-Update this README and make any other initial changes or 🌱 files, etc. Go ahead and do your usual `git` steps, etc. etc. etc.
-
-**Note:** This is a template repository, no need to 'fork it.
+This page will take information from the production page and tell the user how many cases should be ordered to have enough product for production. It will also give what days things can be ordered, what times orders/ deliveries are, amount of items in case and a suggested order amount. 
