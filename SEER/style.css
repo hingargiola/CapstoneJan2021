@@ -1,0 +1,40 @@
+* {
+    background-color:#c6ac8f;
+  }
+  #seerTitle {
+    background-color:#22333b;
+    font-size: 90px;
+    font-family: "Oi" cursive;
+    font-weight: bold;
+    color:#c6ac8f;
+    -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color:#0a0908;
+  }
+  h1 {
+    font-family: cursive;
+    color:#283d3b;
+  }
+  nav {
+    background-color: #5e503f;
+  }
+  nav a {
+    float: left;
+    display: block;
+    color:#283d3b;
+    text-align: center;
+    padding: 20px 100px;
+    text-decoration: none;
+    font-size: 35px;
+    border: 4px double #5e503f;
+  }
+  nav a:hover{
+    background-color: #eae0d5
+  }
+  img {
+    display: block;
+    margin-top: 10% ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    opacity: .60;
+  }
