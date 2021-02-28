@@ -22,7 +22,7 @@
     display: block;
     color:#283d3b;
     text-align: center;
-    padding: 20px 100px;
+    padding: 20px 70px;
     text-decoration: none;
     font-size: 35px;
     border: 4px double #5e503f;
@@ -38,3 +38,17 @@
     width: 60%;
     opacity: .60;
   }
+  #contact {
+    background-color: #5e503f;
+    text-align: center;
+    color: #c6ac8f;
+    font-size: 40px;
+  }
+h2 {
+  text-align: center;
+  color:#5e503f;
+  font-size: 100px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color:#eae0d5;
+  padding-top: 15%;
+}
