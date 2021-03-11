@@ -1,8 +1,8 @@
 import html from "html-literal";
 
 export default () => html`
-<img src="img/Bread.jpg">
-<img class=“home-img” src=“https://github.com/RenwickRyan/Cupp-forcoffeeexplorers/blob/master/Photos/machine&me.JPEG?raw=true”>
+<img src="/img/Bread.jpg">
+
 
 <header id="contact">Contact Us</header>
 
