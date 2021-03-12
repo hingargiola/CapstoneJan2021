@@ -6,7 +6,7 @@ import { Header, Nav, Main, Footer } from "./components";
 
 
 const router = new Navigo(window.location.origin);
-router.updatePageLinks();
+
 
 
 function render(st) {
@@ -16,8 +16,8 @@ function render(st) {
     ${Main(st)}
     ${Footer()}
   `;
+  router.updatePageLinks();
 }
-render(state.Home);
 
 
 
@@ -26,6 +26,6 @@ router.on({
 ":page": params => {
     let page = capitalize(params.page);
     render(state[page]);
-  }});
+  }}).resolve();
 
 

@@ -1,7 +1,7 @@
 import html from "html-literal";
-
+import bread from "../../img/Bread.jpg";
 export default () => html`
-<img src="/img/Bread.jpg">
+<img src= "${bread}" />
 
 
 <header id="contact">Contact Us</header>
