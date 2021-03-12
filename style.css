@@ -4,7 +4,7 @@
   #seerTitle {
     background-color:#22333b;
     font-size: 90px;
-    font-family: "Oi" cursive;
+    font-family: "Oi cursive";
     font-weight: bold;
     color:#c6ac8f;
     -webkit-text-stroke-width: 2px;
@@ -16,6 +16,9 @@
   }
   nav {
     background-color: #5e503f;
+  }
+  nav ul {
+    list-style: none;
   }
   nav a {
     float: left;
