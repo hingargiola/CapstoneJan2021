@@ -20,12 +20,19 @@ function render(st) {
 }
 
 
-
 router.on({
   "/": () => render(state.Home),
 ":page": params => {
     let page = capitalize(params.page);
     render(state[page]);
   }}).resolve();
+
+  axios
+  .get(`https://api.github.com/users/${process.env.GITHUB_USERNAME}/repos`, {
+    headers: {
+      Authorization: `token ${process.env.GITHUB_TOKEN}`,
+    },
+  })
+  .then((response) => console.log(response.data));
 
 
