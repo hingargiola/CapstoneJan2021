@@ -21,7 +21,7 @@ router
   .get((request, response) => {
     // use params Object to get the ID
     const id = request.params.id;
-    const user = db.get("users").getById(id).value();
+    const user = db.get("localhost/4040").getById(id).value();
     if (user) {
       response.json(user);
     } else {
@@ -30,7 +30,7 @@ router
   })
   .patch((request, response) => {
     const id = request.params.id;
-    const user = db.get("users").updateById(id, request.body).write();
+    const user = db.get("localhost4040").updateById(id, request.body).write();
     if (user) {
       response.json(user);
     } else {
@@ -39,7 +39,7 @@ router
   })
   .delete((request, response) => {
     const id = request.params.id;
-    const user = db.get("users").removeById(id).write();
+    const user = db.get("localhost/4040").removeById(id).write();
     if (user) {
       response.json(user);
     } else {
