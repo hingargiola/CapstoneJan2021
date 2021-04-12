@@ -36,31 +36,31 @@ let db_status = "MongoDB connection not successful.";
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => (db_status = "Successfully opened connection to Mongo!"));
 
-const frenchBreadSchema = new mongoose.Schema({
-  monday: Number,
-  tuesday: Number,
-  wednesday: Number,
-  thursday: Number,
-  friday: Number,
-  saturday: Number,
-  sunday: Number
-});
+// const frenchBreadSchema = new mongoose.Schema({
+//   monday: Number,
+//   tuesday: Number,
+//   wednesday: Number,
+//   thursday: Number,
+//   friday: Number,
+//   saturday: Number,
+//   sunday: Number
+// });
 
-const FrenchBread = mongoose.model('frenchBread', frenchBreadSchema)
+// const FrenchBread = mongoose.model('frenchBread', frenchBreadSchema)
 
-app.post("frenchBread", (request, response) => {
-  const newFrenchBread = new FrenchBread(request.body);
-  new FrenchBread.save((err, data) => {
-    return err ? response.sendStatus(500).json(err) : response.json(data);
-  });
-});
+// app.post("frenchBread", (request, response) => {
+//   const newFrenchBread = new FrenchBread(request.body);
+//   new FrenchBread.save((err, data) => {
+//     return err ? response.sendStatus(500).json(err) : response.json(data);
+//   });
+// });
 
-app.get("/frenchBread", (request, response) => {
-  FrenchBread.find({}, (error, data) => {
-    if (error) return response.sendStatus(500).json(error);
-    return response.json(data);
-  });
-});
+// app.get("/frenchBread", (request, response) => {
+//   FrenchBread.find({}, (error, data) => {
+//     if (error) return response.sendStatus(500).json(error);
+//     return response.json(data);
+//   });
+// });
 
 app.route("/").get((request, response) => {
   response.send("HELLO WORLD");
