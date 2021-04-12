@@ -28,7 +28,7 @@ app.use(logging);
 app.use(cors);
 app.use('/movement', movement);
 
-mongoose.connect("mongodb+srv://hingargiola:Abcd814831722@cluster0.crmia.mongodb.net/SEER?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://hingargiola:Abcd814831722@cluster0.crmia.mongodb.net/frenchBread?retryWrites=true&w=majority");
 const db = mongoose.connection;
 
 let db_status = "MongoDB connection not successful.";
