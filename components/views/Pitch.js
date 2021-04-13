@@ -17,40 +17,25 @@ export default () => html`
 
 <div class="row">
     <div>
-      <h3>Monday</h3>
-      <p id="monFBread" 12="frenchBread"></p>
-      <p id="monIBread"></p>
+      <h3>Monday<br>2</h3>
     </div>
     <div>
-      <h3>Tuesday</h3>
-      <p id="tueFrench"></p>
-      <p id="tueIBread"></p>
+      <h3>Tuesday<br>5</h3>
     </div>
     <div>
-      <h3>Wednesday</h3>
-      <p id="wedFrench"></p>
-      <p id="wedIBread"></p>
+      <h3>Wednesday<br>0</h3>
     </div>
     <div>
-      <h3>Thursday</h3>
-      <p id="thurFrench"></p>
-      <p id="thurIBread"></p>
+      <h3>Thursday<br>0</h3>
     </div>
     <div>
-      <h3>Friday</h3>
-      <p id="friFrench"></p>
-      <p id="friIBread"></p>
+      <h3>Friday<br>12</h3>
     </div>
     <div>
-      <h3>Saturday</h3>
-      <p id="satFrench"></p>
-      <p id="satIBread"></p>
+      <h3>Saturday<br>4</h3>
     </div>
     <div>
-      <h3>Sunday</h3>
-      <p id="sunFrench"></p>
-      <p id="sunIBread"></p>
+      <h3>Sunday<br>3</h3>
     </div>
-  </div>
   </div>
 `;
