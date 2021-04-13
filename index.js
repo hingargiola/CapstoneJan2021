@@ -85,7 +85,7 @@ function fetchDataByView(st = state.Home) {
         .get(`https://hingargiolacapstone.herokuapp.com/movement`)
         .then((response) => {
           console.log(response.data);
-          state[st.page].movement = response.data;
+          state[st.view].movement = response.data;
           render(st);
         })
         .catch((error) => {
