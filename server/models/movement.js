@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const frenchBreadSchema = new mongoose.Schema({
+  name: String,
   monday: Number,
   tuesday: Number,
   wednesday: Number,
