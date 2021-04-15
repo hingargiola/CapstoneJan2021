@@ -37,48 +37,26 @@ function render(st) {
       ${Main(st)}
       ${Footer()}
     `;
+  addEventListenersByView(st);
   router.updatePageLinks();
 }
-
-// if (st.view === "Movement") {
-//   document.querySelector("#frenchBread").addEventListener("click", (event) => {
-//     event.preventDefault();
-//     const list = document.querySelector("#frenchBread");
-//     console.log(list.value);
-//     const requestData = {
-//       monday: Number,
-//       tuesday: Number,
-//       wednesday: Number,
-//       thursday: Number,
-//       friday: Number,
-//       saturday: Number,
-//       sunday: Number
-//     };
-
-// const requestData = {
-//   frenchBread: inputList.frenchBread.value,
-// };
-
-// axios
-// .get(`https://api.github.com/users/${process.env.GITHUB_USERNAME}/repos`, {
-//   headers: {
-//     Authorization: `token ${process.env.GITHUB_TOKEN}`,
-//   },
-// })
-// .then((response) => console.log(response.data));
-
-// axios
-// .post(`https://hingargiolacapstone.herokuapp.com/movement`, requestData)
-// .then(response => {
-//   state.frenchBread.frenchBread.push(response.data);
-//   router.navigate("/frenchBread");
-// })
-// .catch(error => {
-//   console.log("It puked", error);
-// });
+function addEventListenersByView(st = state.Home) {
+  if (st.view === "Movement") {
+    document.querySelector("#item").value = st.selected._id;
+    document.querySelector("#item").addEventListener("change", (event) => {
+      event.preventDefault();
+      const element = event.target;
+      const selected = element.options[element.selectedIndex].value;
+      console.log(element.options[element.selectedIndex].value);
+      st.selected = st.movement.find(bread => bread._id === selected);
+      console.log(st.selected);
+      render(st);
+        });
+  }
+}
 
 function fetchDataByView(st = state.Home) {
-  console.log(st.view)
+  console.log(st.view);
   switch (st.view) {
     case "Movement":
       axios
